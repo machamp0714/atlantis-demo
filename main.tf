@@ -21,6 +21,10 @@ module "atlantis" {
 
   # ECS
   ecs_fargate_spot = true
+
+  user = "100:1000"
+
+  enable_ephemeral_storage = true
 }
 
 resource "aws_ssm_parameter" "foo" {
