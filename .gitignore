@@ -20,3 +20,6 @@ crash.log
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# private key
+github_app_key.pem
