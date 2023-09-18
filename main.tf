@@ -14,7 +14,7 @@ module "atlantis" {
   route53_zone_name = "machamp.blog"
 
   # Atlantis
-  atlantis_repo_allowlist        = ["github.com/machamp0714/atlantis-demo/*"]
+  atlantis_repo_allowlist        = ["github.com/machamp0714/atlantis-demo"]
   atlantis_github_app_id         = var.atlantis_github_app_id
   atlantis_github_app_key        = file("./github_app_key.pem")
   atlantis_github_webhook_secret = var.atlantis_github_webhook_secret
