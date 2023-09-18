@@ -22,3 +22,9 @@ module "atlantis" {
   # ECS
   ecs_fargate_spot = true
 }
+
+resource "aws_ssm_parameter" "foo" {
+  name  = "foo"
+  type  = "String"
+  value = "bar"
+}
